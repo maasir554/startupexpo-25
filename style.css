@@ -11,6 +11,7 @@
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body{

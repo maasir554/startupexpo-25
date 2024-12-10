@@ -43,7 +43,7 @@ const HamburgerButtonHandeler = () => {
         hamburgerButton.children[2].classList.add("cross-bar-2")
         MobileMenu.style.transform = "translateX(0)"
         isMenuOpened = true;
-        document.body.style.overflow = "hidden";
+        // document.body.style.overflow = "hidden";
     }
 }
 

@@ -910,7 +910,7 @@ footer{
 }
 
 #mobile-menu{
-    position: absolute;
+    position: fixed;
     top: var(--nav-height);
     left: 0;
     height:100vh;
@@ -926,6 +926,25 @@ footer{
     padding-top: 3rem;
     ul{
         flex-direction: column;
+        width: 100%;
+    }
+    & a{
+        font-family: "Inter", sans-serif;
+        color: #E8E8E8;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: color 0.2s ease;
+        text-wrap: nowrap;
+        width: 100%;
+        text-align: center;
+        padding: 10px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            color: #f9a03f;
+        }
     }
 }
 

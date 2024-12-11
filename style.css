@@ -103,6 +103,13 @@ section{
     }
 }
 
+#reg-head{
+    font-size: 2.88rem;
+    font-weight: 600;
+    font-family: inter;
+    /* white-space: nowrap; */
+}
+
 #intro{
     height: 100vh;
     background-image: url('./assets/main-bg.jpg');
@@ -457,23 +464,28 @@ section#why-attend{
 }
 
 #registration-area{
-    padding: 5rem  4rem;
+    padding: 8rem  0rem;
     background-color: #f6f6f6;
     display: flex;
     flex-direction: row;
     align-items: start;
     gap: 3rem;
+    padding-right: 6rem;
 }
 
 #rf-illustration{
-    width: 100%;
-    max-width: 500px;
-    min-width: 200px;
-    height: auto;
-    & img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 80%;
+    
+}
+
+#rf-illustration img{
+    
         width: 100%;
         height: auto;
-    }
+    
 }
 
 #registration-form{
@@ -486,14 +498,15 @@ section#why-attend{
     gap: 1rem;
     
     h1{
-        margin-bottom: 3rem;
+        margin-bottom: 2.5rem;
     }
 
     p{
-        font-weight: 300;
+        color: #656565;
+        font-weight:light;
         align-self: flex-start;
         a {
-            color: #489FB5;
+            color: #005FED;
             text-decoration: underline;
         }
     }
@@ -525,7 +538,7 @@ section#why-attend{
         width: 100%;
         background-color: white;
         padding: 0rem 1.75rem;
-        border: 2px solid #489FB5;
+        border: 2px solid #7B2C2D;
         border-radius: 0.75rem;
 
         label{
@@ -557,10 +570,10 @@ section#why-attend{
         }
     }
     .submit-form-btn{
-        padding: 1rem 2rem;
+        padding: 0.8rem 2.5rem;
         border: none;
-        border-radius: 0.5rem;
-        background-color: #489FB5;
+        border-radius: 0.35rem;
+        background-color: #7B2C2D;
         color: white;
         font-weight: 600;
         display: flex;
@@ -609,9 +622,12 @@ section#why-attend{
     min-height: 235px;
     justify-content: space-around;
     gap: 3rem;
-    background:linear-gradient(185.1deg, rgba(72, 159, 181, 0.9) 3.44%, rgba(7, 99, 122, 0.9) 95.27%);
+    background:linear-gradient( #AE161E 0%, #310103 100%);
 }
 
+#newsletter h1{
+    color: white;
+}
 
 #newsletter-input-box{
     display: flex;
@@ -626,7 +642,7 @@ section#why-attend{
         color: white;
         font-size: 1.25rem;
         font-weight: 600;
-        background-color: #489FB5;
+        background-color: #7B2C2D;
         border-radius: 0.5rem ;
         height: 100%;
         padding: 0.25rem 1.75rem;
@@ -673,7 +689,7 @@ footer{
             font-size: 1rem;
         }
         h2{
-            color: #489FB5;
+            color: #7B2C2D;
             letter-spacing: 0.22rem;
             font-size: 1.825rem;
             font-weight: 500;
@@ -694,7 +710,7 @@ footer{
             border-bottom: 1px solid #D4D4D4;
             transition: border-color 0.25s ease;
             &:focus{
-                border-color:rgba(72, 159, 181, 0.9);
+                border-color:#7B2C2D;
             }
         }
         textarea{
@@ -752,6 +768,20 @@ footer{
     :root{
         --base-font-size: 14px
     }
+    #registration-form .submit-form-btn {
+        align-self: center;
+
+        
+    }
+    #registration-form p{
+        align-self: center;
+        text-align: center;
+
+    }
+    #registration-area{
+        padding: 4rem ;
+    }
+
 }
 
 @media only screen and (width<795px){
@@ -808,6 +838,7 @@ footer{
         }
     }
     footer{
+        text-align: center;
         padding: 2rem;
         gap: 4rem;
         flex-wrap: wrap;
@@ -867,9 +898,11 @@ footer{
         padding: 0 0.5rem !important;
     }
 
-    .inp-element>label{
+    /* .inp-element>label{
         display: none;
-    }
+    } */
+
+   
 
 }
 
@@ -950,17 +983,17 @@ footer{
 
 #submit-footer{
     background-color: transparent;
-    border: 2px solid #489FB5;
+    border: 2px solid #7B2C2D;
     border-radius: 1rem;
     padding: 0.5rem 1.75rem;
-    color: #489FB5;
+    color: #7B2C2D;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.25s ease;
 
     &:hover{
-        background-color: #489FB5;
-        color: black;
+        background-color: #7B2C2D;
+        color: white;
     }
 }
 

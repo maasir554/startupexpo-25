@@ -495,11 +495,11 @@ section#why-attend{
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    gap: 1rem;
+    gap: 2rem;
     
-    h1{
+    /* h1{
         margin-bottom: 2.5rem;
-    }
+    } */
 
     p{
         color: #656565;
@@ -773,6 +773,9 @@ footer{
 
         
     }
+    #registration form{
+        gap: 0rem;
+    }
     #registration-form p{
         align-self: center;
         text-align: center;
@@ -781,6 +784,7 @@ footer{
     #registration-area{
         padding: 4rem ;
     }
+
 
 }
 
@@ -798,6 +802,21 @@ footer{
     }
     #why-attend-grid{
         gap: 50px !important;
+    }
+    #reg-head{
+        font-size: 2.5rem;
+    }
+    #sponsors h1{
+        font-size: 2.5rem;
+    }
+    #newsletter h1{
+        font-size: 2rem;
+    }
+    .sponsor {
+        width: 7rem;
+        height: 5rem;}
+    #sponsors{
+        gap: 2rem;
     }
 }
 
@@ -822,6 +841,17 @@ footer{
             font-size: 2rem !important;
         }
     }
+    #reg-head{
+        font-size: 2rem;
+    }
+    #sponsors h1{
+        font-size: 2.3rem;
+    }
+    #newsletter h1{
+        font-size: 2rem;
+    }
+    
+    
 }
 
 @media only screen and (width< 560px){
@@ -898,17 +928,33 @@ footer{
         padding: 0 0.5rem !important;
     }
 
-    /* .inp-element>label{
-        display: none;
-    } */
 
-   
+    .inp-element>label>img{
+        height: 1.45rem;
+        width: 1.45rem;
+        
+    } 
+    #reg-head{
+        font-size: 1.5rem;
+        white-space: nowrap;
+        align-self: center;
+    }
+    #registration-form {
+        & .inp-element {
+            height: 2.8rem;
+        }
+    
+
+    }
 
 }
 
 @media only screen and (width < 400px){
     :root{
         --base-font-size: 12px;
+    }
+    #reg-head{
+        white-space: inherit;
     }
 }
 

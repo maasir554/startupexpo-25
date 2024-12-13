@@ -92,3 +92,22 @@ const setValuesOfCountDownVariebles = () => {
 setValuesOfCountDownVariebles() // initially run the function once.
 
 if  (difference_sec > 0 ) setInterval(setValuesOfCountDownVariebles, 1000);
+
+
+// film strip seamless effect
+
+const topStrip = document.querySelector('.film-strip-top');
+    const bottomStrip = document.querySelector('.film-strip-bottom');
+
+    const resetAnimation = (element) => {
+      element.style.animationName = 'none';
+      requestAnimationFrame(() => {
+        element.style.animationName = 'scroll-strip';
+      });
+    };
+
+    //  reset animations to keep them in sync
+    setInterval(() => {
+      resetAnimation(topStrip);
+      resetAnimation(bottomStrip);
+    }, 20000); 

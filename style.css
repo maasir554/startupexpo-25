@@ -137,6 +137,20 @@ section{
     align-items: center;  
           
   }
+
+
+  @media (max-width: 768px) {
+    #hero-heading {
+        flex-direction: column; 
+        gap: 0.5rem; 
+    }
+
+    #intro-heading-l1,
+    #intro-heading-l2 {
+        font-size: 3.2rem; 
+        letter-spacing: 0.3rem; 
+    }
+}
 #intro-heading-l1{
     font-size: 5.4rem;
     font-weight: 800;
@@ -166,7 +180,7 @@ section{
     width: 500px;
     height: 110px;
     padding: 1rem 0rem 1rem 15rem;
-    gap: 2rem;
+    gap: 1rem;
   
 
     
@@ -1191,3 +1205,11 @@ footer{
 }
 
 
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    /* background: linear-gradient(#E50914, #7F050B); */
+    background:#E50914 ;
+}

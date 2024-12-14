@@ -973,6 +973,17 @@ footer{
     #sponsors{
         gap: 2rem;
     }
+    #newsletter-input-box{
+        height: 3rem;
+        width: 80%;
+        
+        button{
+            font-size: 1.05rem;
+        }
+    }
+    #newsletter{
+        gap:2rem;
+    }
 }
 
 @media only screen and (width<680px){
@@ -1005,7 +1016,9 @@ footer{
     #newsletter h1{
         font-size: 2rem;
     }
-    
+    #newsletter{
+        gap: 1rem;
+    }
     
 }
 
@@ -1033,6 +1046,14 @@ footer{
             h2{
                 margin-bottom: 0.5rem;
             }
+            
+            a, .contact-item, input, input::placeholder, textarea, textarea::placeholder {
+                        color: #D4D4D4;
+                        font-size: 1rem;
+                        text-align: left;
+                    }
+                
+            
         }
     }
 
@@ -1091,7 +1112,7 @@ footer{
     } 
     #reg-head{
         font-size: 1.5rem;
-        white-space: nowrap;
+        /* white-space: nowrap; */
         align-self: center;
     }
     #registration-form {

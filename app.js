@@ -111,3 +111,5 @@ const topStrip = document.querySelector('.film-strip-top');
       resetAnimation(topStrip);
       resetAnimation(bottomStrip);
     }, 20000); 
+
+

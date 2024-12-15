@@ -25,6 +25,7 @@ body{
     scrollbar-gutter: 20px;
 }
 
+
 :root{
     --base-font-size: 16px;
     --nav-height: 100px;
@@ -724,6 +725,8 @@ section#why-attend{
     display: flex;
     flex-direction: column;
     background-color: #EDEDED;
+    background-position: center;
+    background-size: cover;
     padding: 4rem;
     gap: 4rem;
 }
@@ -873,7 +876,7 @@ footer{
             height: 100px;
         }
     }
-
+  
 }
 
 @media only screen and (width<1075px){
@@ -972,6 +975,7 @@ footer{
         height: 5rem;}
     #sponsors{
         gap: 2rem;
+        padding: 4rem 2rem;
     }
     #newsletter-input-box{
         height: 3rem;
@@ -984,6 +988,16 @@ footer{
     #newsletter{
         gap:2rem;
     }
+    #about-us-heading{
+        align-self: center;
+    }
+    #about{
+        padding: 5rem 2.5rem;
+    }
+    #last-expo-details{
+        padding: 5rem 2.5rem;
+    }
+
 }
 
 @media only screen and (width<680px){
@@ -1008,8 +1022,8 @@ footer{
         }
     }
     #reg-head{
-        font-size: 2rem;
-    }
+        font-size: 2.3rem;
+    } 
     #sponsors h1{
         font-size: 2.3rem;
     }
@@ -1110,11 +1124,7 @@ footer{
         width: 1.45rem;
         
     } 
-    #reg-head{
-        font-size: 1.5rem;
-        /* white-space: nowrap; */
-        align-self: center;
-    }
+    
     #registration-form {
         & .inp-element {
             height: 2.8rem;
@@ -1130,8 +1140,9 @@ footer{
         --base-font-size: 12px;
     }
     #reg-head{
-        white-space: inherit;
+        font-size: 2.2rem;
     }
+    
 }
 
 #hamburger-menu{

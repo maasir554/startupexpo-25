@@ -129,6 +129,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 5rem; 
     gap: 2.5rem;
     
@@ -157,7 +158,7 @@ section{
     font-weight: 800;
     margin: 0;
     color: #E8E8E8;
-    padding-right: 10px;
+    /* padding-right: 10px; */
     letter-spacing: 0.8rem;
   
 }
@@ -180,7 +181,7 @@ section{
     justify-content: center;
     width: 500px;
     height: 110px;
-    padding: 1rem 0rem 1rem 15rem;
+    /* padding: 1rem 0rem 1rem 15rem; */
     gap: 1rem;
   
 

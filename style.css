@@ -474,18 +474,21 @@ section#why-attend{
 * 
 
   #event-gallery {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     height: 70vh;
-    background-color: #ffffff;
+    background-image: url('assets/eventgallery/bgct.png');
+    
   }
+
+
 
   .slider-container {
     width: 100%;
     max-width: 100%;
     overflow: hidden; 
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.4);
     padding: 30px;
     position: relative;
   }
@@ -493,7 +496,7 @@ section#why-attend{
   .film-strip {
     display: flex;
     position: absolute;
-    width: 300%; /* Increased width to ensure continuous flow */
+    width: 300%; 
     height: 30px;
     background-color: rgba(0,0,0,0);
     z-index: 5;
@@ -531,13 +534,13 @@ section#why-attend{
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-33.33%); /* Moves one-third of the width */
+      transform: translateX(-33.33%);
     }
   }
 
   .slider-track {
     display: flex;
-    animation: scroll 15s linear infinite; /* Controls the speed of the scroll */
+    animation: scroll 15s linear infinite;
   }
 
   .slider-track img {

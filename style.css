@@ -43,7 +43,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
+    padding: 10px 30px;
     backdrop-filter: blur(5px);
     z-index: 999;
     transition: transform 0.25s ease;
@@ -116,9 +116,11 @@ section{
     height: 100vh;
     background-image: url('assets/Hero.jpg');
     background-size: cover;
+    background-position-x: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    
     
     & h1{
         font-family: "Montserrat", sans-serif;
@@ -132,6 +134,7 @@ section{
     align-items: center;
     margin-bottom: 5rem; 
     gap: 2.5rem;
+   
     
 }
 #hero-heading {
@@ -141,18 +144,8 @@ section{
   }
 
 
-  @media (max-width: 768px) {
-    #hero-heading {
-        flex-direction: column; 
-        gap: 0.5rem; 
-    }
+ 
 
-    #intro-heading-l1,
-    #intro-heading-l2 {
-        font-size: 3.2rem; 
-        letter-spacing: 0.3rem; 
-    }
-}
 #intro-heading-l1{
     font-size: 5.4rem;
     font-weight: 800;
@@ -180,7 +173,7 @@ section{
     align-items: center;
     justify-content: center;
     width: 500px;
-    height: 110px;
+    height: 80px;
     /* padding: 1rem 0rem 1rem 15rem; */
     gap: 1rem;
   
@@ -474,13 +467,16 @@ section#why-attend{
 * 
 
   #event-gallery {
-    /* display: flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center; */
-    height: 70vh;
+    align-items: center;
+    gap: 3.5rem;
+    height: 75vh;
     background-image: url('assets/eventgallery/bgct.png');
     
   }
+
 
 
 
@@ -528,6 +524,13 @@ section#why-attend{
     padding: 5px 0;
     animation: scroll-strip 20s linear infinite;
   }
+.gallery-heading{
+    color: white;
+    font-size: 2.88rem;
+    font-weight: 600;
+    
+}
+
 
   @keyframes scroll-strip {
     0% {
@@ -882,6 +885,40 @@ footer{
     }
   
 }
+@media only screen and (width<1285px){
+    #intro-heading-l2 {
+        font-size: 4.7rem;
+        font-weight: 750;
+        background: linear-gradient(to right, #AE161E, #620206);
+        color: black;
+        margin: 0;
+        letter-spacing: 0.5rem;
+    }
+    #intro-heading-l1 {
+        font-size: 4.4rem;
+        font-weight: 750;
+        margin: 0;
+        color: #E8E8E8;
+        /* padding-right: 10px; */
+        letter-spacing: 0.55rem;
+    }
+    #intro-contents {
+        margin-bottom: 5.5rem;
+        gap: 2.2rem;
+    }
+    #countdown {
+
+        height: 70px;
+        & .count {
+            & p:nth-child(1) {
+                font-size: 2rem;
+            }
+            & p:nth-child(2){
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
 
 @media only screen and (width<1075px){
     nav>#nav-links-desktop{
@@ -901,8 +938,17 @@ footer{
     #mobile-menu{
         display: flex !important;
     }
+    #intro-contents {
+        margin-bottom: 14rem;
+        gap: 2.2rem;
+    }
+    #countdown {
+
+        height: 60px;}
+    
 
 }
+
 
 @media only screen and (width< 950px){
     section, #about{
@@ -1001,6 +1047,7 @@ footer{
     #last-expo-details{
         padding: 5rem 2.5rem;
     }
+   
 
 }
 
@@ -1037,13 +1084,23 @@ footer{
     #newsletter{
         gap: 1rem;
     }
-    
+    .gallery-heading{
+        font-size: 2.35rem;
+    }
+    #intro-heading-l1,
+    #intro-heading-l2 {
+        font-size: 3.3rem; 
+        letter-spacing: 0.3rem; 
+    }
+    #countdown{
+        width: 300px;
+    }
 }
 
 @media only screen and (width< 560px){
     
     #countdown{
-        height: 75px !important;
+        height: 50px ;
     }
     
     #intro{
@@ -1073,6 +1130,10 @@ footer{
                 
             
         }
+        
+    }
+    nav{
+        padding: 10px 20px;
     }
 
     #newsletter{
@@ -1146,8 +1207,21 @@ footer{
     #reg-head{
         font-size: 2.2rem;
     }
-    
+    #countdown{
+        height: 45px ;
+    }
 }
+@media (max-width: 560px) {
+    #hero-heading {
+        flex-direction: column; 
+        gap: 0.5rem; 
+    }
+
+    #intro-heading-l1,
+    #intro-heading-l2 {
+        font-size: 3rem; 
+        letter-spacing: 0.3rem; 
+    }}
 
 #hamburger-menu{
     width: 29px;

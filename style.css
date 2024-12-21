@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Caveat:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     margin: 0;
@@ -66,9 +66,9 @@ nav{
         & a{
             font-family: "Inter", sans-serif;
             color: #E8E8E8;
-            font-size: 1.2rem;
+            font-size: 1rem;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 300;
             transition: color 0.2s ease;
             text-wrap: nowrap;
             &:hover{
@@ -96,15 +96,15 @@ section{
         line-height: 2rem;
         text-shadow: 0px 4px 4px  rgba(0, 0, 0, 0.25);
     }
-    & .sec-heading{
-        font-weight: 700;
-        font-size: 3.125rem;;
-        letter-spacing: 0.07438rem;
-        color: #02020A;
-
-    }
+    
 }
+.sec-heading{
+    font-weight: 700;
+    font-size: 3.125rem;;
+    letter-spacing: 0.07438rem;
+    color: #02020A;
 
+}
 #reg-head{
     font-size: 2.88rem;
     font-weight: 600;
@@ -176,6 +176,8 @@ section{
     height: 80px;
     /* padding: 1rem 0rem 1rem 15rem; */
     gap: 1rem;
+    font-family: "Montserrat", sans-serif;
+    
   
 
     
@@ -195,13 +197,13 @@ section{
         height: 100%;
         color: #F5F5F5;
         font-family: "Montserrat", sans-serif;
-        font-weight: 600;
+        font-weight: 500;
         flex: 1;
         & p:nth-child(1){
             font-size: 2.2rem;
         }
         & .p:nth-child(2){
-            font-size: 1.4;
+            font-size: 1.6rem;
         }
     }
 }
@@ -273,7 +275,7 @@ section.continuos-bg{
 }
 section.continuos-bg::before{
     
-    opacity: 0.34;
+    opacity: 0.28;
     background-image: url("assets/why-attend.jpeg");
     background-position: center;
     background-size: cover;
@@ -340,6 +342,8 @@ section#why-attend{
     & li{
         list-style:decimal;
     }
+
+    
     & #reg-pro{
         padding: 5rem ;
         background-color: white;
@@ -348,7 +352,7 @@ section#why-attend{
         color: black;
         line-height: 2rem;
         max-width: 1120px;
-        border-radius: 1rem;
+        border-radius: 2.3rem;
         box-shadow: 0px 5px 15px 0px #00000040;
         margin-bottom: 5rem;
         
@@ -372,8 +376,9 @@ section#why-attend{
             box-shadow: 0px 5px 15px 0px #00000040;
             border-radius: 1rem;
             padding: 3rem;
-            padding-top: 10rem;
+            padding-top: 8rem;
             position: relative;
+            text-align: center;
             & .screening-no{
                 position: absolute;
                 top: 0;
@@ -401,7 +406,14 @@ section#why-attend{
         }
     }
 }
-
+#Registration-heading, #Screening-heading{
+    font-family: "Raleway", sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+    z-index: 100;
+    text-shadow: 4px 4px 8px 0px #00000040;
+    
+}
 #last-expo-details{
     justify-content: space-evenly;
     align-items: flex-start;
@@ -782,49 +794,6 @@ div.sponsor-image-wrapper > a{
     background-color: white;
 }
 
-#newsletter{
-    padding: 3rem;
-    min-height: 235px;
-    justify-content: space-around;
-    gap: 3rem;
-    background:linear-gradient( #AE161E 0%, #310103 100%);
-}
-
-#newsletter h1{
-    color: white;
-}
-
-#newsletter-input-box{
-    display: flex;
-    padding: 0.25rem;
-    background-color: white;
-    height: 3.5rem;
-    width: 100%;
-    max-width: 670px;
-    border-radius: 0.5rem;
-
-    button{
-        color: white;
-        font-size: 1.25rem;
-        font-weight: 600;
-        background-color: #7B2C2D;
-        border-radius: 0.5rem ;
-        height: 100%;
-        padding: 0.25rem 1.75rem;
-        border:none;
-        cursor: pointer;
-    }
-
-    input{
-        width: 100%;
-        border:none;
-        padding: 0.5rem;
-        font-size: 1.06rem;
-        &:focus{
-            outline: none;
-        }
-    }
-}
 
 footer{
     width: 100%;
@@ -847,7 +816,9 @@ footer{
         padding-top: 3rem;
         .contact-item{
             display: flex;
-            gap: 1rem;
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
         }
         a,.contact-item, input, input::placeholder, textarea, textarea::placeholder{
             color: #D4D4D4;
@@ -856,7 +827,7 @@ footer{
         h2{
             color: #7B2C2D;
             letter-spacing: 0.22rem;
-            font-size: 1.825rem;
+            font-size: 2.3rem;
             font-weight: 500;
             margin-bottom: 1.5rem;
         }
@@ -883,7 +854,48 @@ footer{
             height: 100px;
         }
     }
+    .footer-left{
+        .contact-item{
+            a{
+                font-size: 1.2rem;
+            }
+
+            img{
+                height: 25px;
+                width: 25px;
+            }
+           
+        }
+    }
+    .footer-social-element{
+        margin-top: 2.5rem;
+        img{
+            
+            height: 29px;
+            width: 29px;
+        }
+    }
+
   
+}
+div.footer-one-social {
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.footer-social-element{
+    transition: all 0.3s ease-in-out;
+
+}
+.footer-social-element:hover{
+    transform: scale(1.2);
+   
+
 }
 @media only screen and (width<1285px){
     #intro-heading-l2 {
@@ -992,6 +1004,9 @@ footer{
     #registration-area{
         padding: 4rem ;
     }
+    #Registration-heading, #Screening-heading{
+        font-size: 3.8rem;
+    }
 
 
 }
@@ -1017,9 +1032,6 @@ footer{
     #sponsors h1{
         font-size: 2.5rem;
     }
-    #newsletter h1{
-        font-size: 2rem;
-    }
     .sponsor {
         width: 7rem;
         height: 5rem;}
@@ -1027,17 +1039,7 @@ footer{
         gap: 2rem;
         padding: 4rem 2rem;
     }
-    #newsletter-input-box{
-        height: 3rem;
-        width: 80%;
-        
-        button{
-            font-size: 1.05rem;
-        }
-    }
-    #newsletter{
-        gap:2rem;
-    }
+
     #about-us-heading{
         align-self: center;
     }
@@ -1078,12 +1080,7 @@ footer{
     #sponsors h1{
         font-size: 2.3rem;
     }
-    #newsletter h1{
-        font-size: 2rem;
-    }
-    #newsletter{
-        gap: 1rem;
-    }
+    
     .gallery-heading{
         font-size: 2.35rem;
     }
@@ -1095,6 +1092,16 @@ footer{
     #countdown{
         width: 300px;
     }
+    footer{
+        padding: 4rem 2rem;
+    }
+    #Registration-heading, #Screening-heading{
+        font-size: 3rem;
+    }
+    .sec-heading{
+        font-size: 2.9rem;
+    }
+    
 }
 
 @media only screen and (width< 560px){
@@ -1113,7 +1120,7 @@ footer{
     footer{
         text-align: center;
         padding: 2rem;
-        gap: 4rem;
+        gap: 4rem 2rem;
         flex-wrap: wrap;
         .footer-left, .footer-right{
             border-left: none;
@@ -1136,9 +1143,6 @@ footer{
         padding: 10px 20px;
     }
 
-    #newsletter{
-        padding: 2rem;
-    }
 
     .stat-value{
         h1{
@@ -1196,6 +1200,17 @@ footer{
         }
     
 
+    }
+    .sec-heading{
+        font-size: 2.5rem;
+    }
+    footer {
+        & .footer-social-element {
+            img {
+                height: 24px;
+                width: 24px;
+            }
+        }
     }
 
 }

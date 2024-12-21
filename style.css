@@ -485,7 +485,7 @@ section#why-attend{
     align-items: center;
     gap: 3.5rem;
     height: 75vh;
-    background-image: url('assets/eventgallery/bgct.png');
+    
     
   }
 
@@ -537,7 +537,7 @@ section#why-attend{
     animation: scroll-strip 20s linear infinite;
   }
 .gallery-heading{
-    color: white;
+    color: black;
     font-size: 2.88rem;
     font-weight: 600;
     

@@ -294,66 +294,96 @@
 </section>
     
     <section id="registration-area">
-        <div id="rf-illustration">
-            <img src="assets/registration-form/Rectangle 197.png" alt="reg-bg">
-        </div>
         <div id="registration-form">
             <h1 class="sec-heading" id="reg-head">
                 Register Now For Startup Expo
             </h1>
 
-            <form action="#">
-                <div class="inp-element">
-                    <label for="person-name">
-                        <img src="assets/registration-form/🦆 icon _person outline_.svg" alt="">
-    
-                    </label>
-                    <input placeholder="Name" type="text" name="Person name" id="person-name">
-                </div>
-                
-                <div class="inp-element">
-                    <label for="email">
-                        <img src="assets/registration-form/🦆 icon _email outline_.svg" alt="">
-                    </label>
-                    <input placeholder="Email Address" type="text" name="Email" id="email">
-                </div>
-                
-                <div class="inp-element">
-                    <label for="whatsapp-no">
-                        <img src="assets/registration-form/Vector (4).svg" alt="">
-                    </label>
-                    <input placeholder="Whatsapp number" type="text" name="Whatsapp number" id="whatsapp-no">
-                </div>
+            <form
+            id="registration-form-element"
+            action=""
+            
+            >
 
-                <span id="clg-details">
-                    <div class="inp-element">
-                        <label for="clg-name">
-                            <img src="assets/registration-form/🦆 icon _school_ (3).svg" alt="">
-                        </label>
-                        <input placeholder="College" type="text" name="College name" id="clg-name">
-                    </div>
-                    <div class="inp-element">
-                        <label for="clg-year">
-                            <img src="assets/registration-form/🦆 icon _school_ (3).svg" alt="">
-                        </label>
-                        <input placeholder="Year/Class" type="number" name="Graguation year" id="clg-year">
-                    </div>
-                </span>
-                <div class="inp-element">
-                    <label for="clg-branch">
-                        <img src="assets/registration-form/🦆 icon _people outline_ (2).svg" alt="">
-                    </label>
-                    <input placeholder="Branch/Section" type="text" name="College Branch" id="clg-branch">
+                <div  id="register-now" >
+                    <span id="reg-left">
+                        <div class="inp-element">
+                            <input placeholder="Startup Name" type="text" name="name">
+                        </div>
+                        
+                        <div class="inp-element">
+                            
+                            <input placeholder="Headquater" type="text" name="headquarter">
+                        </div>
+                        
+                        <div class="inp-element">
+                            
+                            <input placeholder="Linkedin Profile" type="text" name="linkedin">
+                        </div>
+        
+                        <span id="clg-details">
+                            <div class="inp-element">
+                                
+                                <input placeholder="Revenue" type="text" name="revenue">
+                            </div>
+                            <div class="inp-element">
+                    
+                                <input placeholder="Valuation" type="number" name="valuation" >
+                            </div>
+                        </span>
+                        <div class="inp-element">
+                            
+                            <input placeholder="Website" type="text" name="website">
+                        </div>
+                        <div class="inp-element" id="aboutstartup">
+                            
+                            <input placeholder="About the satrtup" type="text" name="aboutStartup" >
+                        </div>
+                        
+                    </span>
+    
+                    <span id="reg-right">
+                        <div class="inp-element">
+                            <input placeholder="E-mail" type="text" name="email">
+                        </div>
+                        
+                        <div class="inp-element">
+                            
+                            <input placeholder="Contact" type="text" name="contact">
+                        </div>
+                        
+                        <div class="inp-element">
+                            
+                            <input placeholder="Founder's Name" type="text" name="founder">
+                        </div>
+        
+                        <span id="clg-details">
+                            <div class="inp-element">
+                                
+                                <input placeholder="No. of Employees" type="number" name="employee_count">
+                            </div>
+                            <div class="inp-element">
+                    
+                                <input placeholder="Profitabel" type="text" name="profitable" >
+                            </div>
+                        </span>
+
+                        <span class="clg-details">
+                            <div class="inp-element">
+                                
+                                <input placeholder="Founding Year" type="text" name="founding_year">
+                            </div>
+                            <div class="inp-element">
+                    
+                                <input placeholder="Domain / Niche" type="number" name="domain" >
+                            </div>
+                        </span>
+                        <div class="inp-element" id="aboutstartup">
+                            
+                            <input placeholder="Stage of Startup" type="text" name="stage" >
+                        </div>
+                    </span>
                 </div>
-                <div class="inp-element">
-                    <label for="referal-code">
-                        <img src="assets/registration-form/🦆 icon _school_ (3).svg" alt="">
-                    </label>
-                    <input placeholder="Referal Code (Optional)" type="text" name="Referal Code" id="referal-code">
-                </div>
-                <p>
-                    By Clicking on Submit you agree on our <a href="https://github.com/maasir554">Terms and Conditions</a>
-                </p>
                 <button type="submit" class="submit-form-btn">Submit</button>
 
             </form>
@@ -644,5 +674,6 @@
 
     </footer>
     <script src="app.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 
 const myForm = document.querySelector("#registration-form-element");
-
+console.log("app44");
 myForm.addEventListener("submit", async (evt) => {
     evt.preventDefault();
     const form = evt.target

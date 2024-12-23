@@ -6,7 +6,7 @@ myForm.addEventListener("submit", async (evt) => {
     const form = evt.target
     const formData = new FormData(form)
     const data = Object.fromEntries(formData.entries())
-    
+    console.log(data);
     try {
         const response = await fetch('https://server.ecellnitb.in/startup', {
             method: 'POST',

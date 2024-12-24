@@ -53,6 +53,11 @@ expoForm.addEventListener("submit", async (evt) => {
     } catch (error) {
         console.error('Fetch error:', error);
     }
+    finally{
+        form.reset()
+        submitBtn.innerHTML= "Submit";
+        submitBtn.disabled = false;
+    }
 
 })
 

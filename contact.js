@@ -1,5 +1,5 @@
 console.log("clicked");
-document.getElementById('footerForm').addEventListener('submit', async function (event) {
+document.getElementById('footer-form').addEventListener('submit', async function (event) {
     event.preventDefault(); // Prevent default form submission
 
     const submitButton = document.getElementById('submit-footer');
@@ -25,15 +25,15 @@ document.getElementById('footerForm').addEventListener('submit', async function 
 
         if (response.ok) {
             alert('Message recorded successfully!');
-            document.getElementById('footerForm').reset();
+            document.getElementById('footer-form').reset();
             
         } else {
-            document.getElementById('footerForm').reset();
+            document.getElementById('footer-form').reset();
             alert('Error submitting form. Please try again.');
         }
     } catch (error) {
         console.error('Error:', error);
-        document.getElementById('footerForm').reset();
+        document.getElementById('footer-form').reset();
         alert('An error occurred. Please try again.');
     } finally {
         submitButton.disabled = false; // Re-enable the button

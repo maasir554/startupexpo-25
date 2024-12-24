@@ -103,7 +103,12 @@ section{
     font-size: 3.125rem;;
     letter-spacing: 0.07438rem;
     color: #02020A;
+    font-family: Inter;
 
+}
+
+.sec-para{
+    font-family: Roboto;
 }
 #reg-head{
     font-size: 2.88rem;
@@ -296,16 +301,15 @@ section#why-attend{
     justify-content: center;
     gap: 3rem;
     padding: 4rem 2rem;
-
-    /* background: rgb(242,206,206);
-    background: linear-gradient(0deg, rgb(230, 210, 210) 0%, rgb(241, 227, 228) 63%);  */
-     background-color: black; 
-    /* background-image: url(./assets/why4.jpeg); */
+    /* background-image: url(./assets/whyy.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/whyyy.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    /* opacity: 0.7; */
     .sec-heading{
-        color: #AE161E;
+        color: white;
+        text-shadow: 2px 2px  0px #141212d6;
     }
     
 
@@ -318,19 +322,25 @@ section#why-attend{
         gap: 1.5rem;
         flex-wrap:wrap ;
         color: white;
+        text-align: center;
         
         & .why-attend-card{
             display: flex;
             flex-direction: column;
-            align-items: start;
+            align-items: center;
             justify-content: start;
+            text-shadow: 4px 4px 8px 0px #f6f1f1d6;
+
             gap: 1rem;
-            width: 350px;
-            min-height: 250px;
+            /* width: 350px;
+            min-height: 250px; */
+            height: 300px;
+            width: 400px;
            
-            backdrop-filter: blur(19px);
-            padding: 1rem;
-            /*    */
+            backdrop-filter: blur(15px);
+            padding: 2.2rem 2rem;
+            /* border: 0.1px solid white; */
+            border-radius: 1rem;
             & p{
                 line-height: 2rem;
 
@@ -343,10 +353,26 @@ section#why-attend{
 
 .why-attend-card{
     h2{
-        color: #AE161E;
+        color:#AE161E;
+        text-shadow: 1px 1px 0px  #000000d6;
     }
 }
-
+#why-attend::before{
+   
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-image: url(./assets/whyy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);}
+    
+    
+    
 
 #Screening-heading> text{
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.25);
@@ -403,6 +429,7 @@ background: linear-gradient(273deg, rgb(33, 10, 10) 0%, rgba(0,0,0,1) 50%, rgb(4
             padding-top: 8rem;
             position: relative;
             text-align: center;
+            font-family: Roboto;
             & .screening-no{
                 position: absolute;
                 top: 0;
@@ -446,6 +473,7 @@ background: linear-gradient(273deg, rgb(33, 10, 10) 0%, rgba(0,0,0,1) 50%, rgb(4
     background-size: cover;
     color: white;
     position: relative;
+  
     
     padding: 5rem;
     display: flex;

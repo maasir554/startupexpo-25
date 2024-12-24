@@ -1385,3 +1385,21 @@ div.footer-one-social {
         flex-direction: column !important;
     }
 }
+
+#register-button{
+    background-color:#790d11;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 100px;
+    font-weight: 600;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid  #E50914;
+    &:hover{
+        background-color: #E50914;
+    }
+    &:active{
+        transform: scale(95%);
+    }
+}

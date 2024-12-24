@@ -111,11 +111,16 @@ section{
     font-family: Roboto;
 }
 #reg-head{
+    backdrop-filter: blur(10px);
     font-size: 2.88rem;
     font-weight: 600;
     font-family: inter;
-    /* white-space: nowrap; */
-}
+    font-weight: 900;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    }
 
 #intro{
     height: 100vh;
@@ -382,7 +387,7 @@ section#why-attend{
 #reg-and-screening{
     /* background-color: black; */
     background: rgb(74,21,21);
-background: linear-gradient(273deg, rgb(33, 10, 10) 0%, rgba(0,0,0,1) 50%, rgb(43, 13, 13) 100%);
+    background: linear-gradient(273deg, rgb(33, 10, 10) 0%, rgba(0,0,0,1) 50%, rgb(43, 13, 13) 100%);
     padding: 5rem 2rem;
     display: flex;
     flex-direction: column;
@@ -683,7 +688,12 @@ background: linear-gradient(273deg, rgb(33, 10, 10) 0%, rgba(0,0,0,1) 50%, rgb(4
 
 #registration-area{
     padding: 8rem  0rem;
-    background-color: #f6f6f6;
+    /* background-color: #f6f6f6;
+     */
+     /* background-image: url("assets/formbg.png"); */
+     background: linear-gradient(273deg, rgb(33, 10, 10) 0%, rgba(0,0,0,1) 50%, rgb(43, 13, 13) 100%);
+     background-size: cover;
+     background-position: center;
     display: flex;
     flex-direction: row;
     /* align-items: start; */
@@ -748,17 +758,21 @@ background: linear-gradient(273deg, rgb(33, 10, 10) 0%, rgba(0,0,0,1) 50%, rgb(4
 
 
     & .inp-element{
+        backdrop-filter: blur(10px);
         min-width: 150px;
+        max-width: 700px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        height: 3.5rem;
+        height: 5rem;
         width: 100%;
-        background-color: white;
-        padding: 0rem 1.75rem;
-        border: 2px solid #7B2C2D;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* padding: 2rem 0rem; */
+        padding-left: 1.5rem;
+        overflow: hidden;
+        border: 2px solid #620206;
         border-radius: 0.75rem;
 
         label{
@@ -771,13 +785,15 @@ background: linear-gradient(273deg, rgb(33, 10, 10) 0%, rgba(0,0,0,1) 50%, rgb(4
 
 
         input{
-            font-size: 1.06rem;
+            background-color: transparent;
+            font-size: 1.2rem;
             padding: 1rem;
             border: none;
             width: 100%;
             height: 100%;
+            color: white;
             &::placeholder{
-                color: #9F9F9F;
+                color: #bababa;
                 font-size: 1.06rem;
                 display: flex;
                 align-items: center;
@@ -792,8 +808,8 @@ background: linear-gradient(273deg, rgb(33, 10, 10) 0%, rgba(0,0,0,1) 50%, rgb(4
     .submit-form-btn{
         padding: 0.8rem 2.5rem;
         border: none;
-        border-radius: 0.35rem;
-        background-color: #7B2C2D;
+        border-radius: 100rem;
+        background-color: #E50914;
         color: white;
         font-weight: 600;
         display: flex;
@@ -802,6 +818,16 @@ background: linear-gradient(273deg, rgb(33, 10, 10) 0%, rgba(0,0,0,1) 50%, rgb(4
         /* align-self: flex-start; */
         cursor: pointer;
         font-size: 1rem;
+        &:disabled{
+            opacity: 0.75;
+        }
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+        &:active{
+            scale: 95%;
+        }
     }
 
 }
@@ -1260,9 +1286,9 @@ div.footer-one-social {
         font-size: 5.4rem;
     }
 
-    .inp-element{
+    /* .inp-element{
         padding: 0 0.5rem !important;
-    }
+    } */
 
 
     .inp-element>label>img{
@@ -1271,13 +1297,6 @@ div.footer-one-social {
         
     } 
     
-    #registration-form {
-        & .inp-element {
-            height: 2.8rem;
-        }
-    
-
-    }
     .sec-heading{
         font-size: 2.5rem;
     }
@@ -1428,7 +1447,7 @@ div.footer-one-social {
 
 #register-now{
     display: flex;
-    flex-direction: row !important;
+    flex-direction: column !important;
     width:100%;
     align-items: center;
     justify-content: center;

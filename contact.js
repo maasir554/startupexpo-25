@@ -10,9 +10,10 @@ document.getElementById('footer-form').addEventListener('submit', async function
     const formData = {
         name: document.getElementById('namecu').value,
         email: document.getElementById('emailcu').value,
-        query: document.getElementById('messagecu').value,
+        message: document.getElementById('messagecu').value,
     };
 
+    console.log(JSON.stringify(formData));
 
     try {
         const response = await fetch('https://server.ecellnitb.in/email', {

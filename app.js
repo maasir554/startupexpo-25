@@ -1,7 +1,7 @@
 //Programming fpr navBar disappear on scroll down
 
 let lastPosn = 0;
-
+console.log("app");
 const NavEffect = (evt) => {
     if (window.scrollY > lastPosn){
         navBar.style.transform = "translateY(-100%)";

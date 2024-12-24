@@ -485,6 +485,7 @@ section#why-attend{
     align-items: center;
     gap: 3.5rem;
     height: 75vh;
+    background-image: url('assets/eventgallery/back.png');
     
     
   }
@@ -537,7 +538,7 @@ section#why-attend{
     animation: scroll-strip 20s linear infinite;
   }
 .gallery-heading{
-    color: black;
+    color: white;
     font-size: 2.88rem;
     font-weight: 600;
     
@@ -1332,15 +1333,6 @@ div.footer-one-social {
 }
 
 
-::-webkit-scrollbar{
-    width: 15px;
-}
-
-::-webkit-scrollbar-thumb{
-    /* background: linear-gradient(#E50914, #7F050B); */
-    background:#E50914 ;
-}
-
 
 #reg-left{
     display: flex;
@@ -1395,6 +1387,7 @@ div.footer-one-social {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 1000;
     border: 2px solid  #E50914;
     &:hover{
         background-color: #E50914;

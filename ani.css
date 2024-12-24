@@ -1,8 +1,8 @@
 .hidden{
     opacity: 0;
     fill: blur(5px);
-    transition:all  1s ease-in-out;
-    transform: translateX(-100%);
+    transition:all  0.75s ease-in-out;
+    transform: translateX(-10%);
 }
 
 .show{

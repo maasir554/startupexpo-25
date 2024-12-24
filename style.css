@@ -1332,15 +1332,6 @@ div.footer-one-social {
 }
 
 
-::-webkit-scrollbar{
-    width: 15px;
-}
-
-::-webkit-scrollbar-thumb{
-    /* background: linear-gradient(#E50914, #7F050B); */
-    background:#E50914 ;
-}
-
 
 #reg-left{
     display: flex;

@@ -1387,6 +1387,7 @@ div.footer-one-social {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 1000;
     border: 2px solid  #E50914;
     &:hover{
         background-color: #E50914;

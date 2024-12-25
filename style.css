@@ -262,7 +262,8 @@ section{
 }
 
 section#who-can-participate{
-    /* background-image: url('assets/aboutnew.jpg'); */
+   
+    background: linear-gradient(to right, #02020A, #383838, #02020A);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -706,7 +707,7 @@ section#why-attend{
     /* background-color: #f6f6f6;
      */
      /* background-image: url("assets/formbg.png"); */
-     background: linear-gradient(273deg, rgb(33, 10, 10) 0%, rgba(0,0,0,1) 50%, rgb(43, 13, 13) 100%);
+     background: linear-gradient(to right, #02020A, #383838, #02020A);
      background-size: cover;
      background-position: center;
     display: flex;

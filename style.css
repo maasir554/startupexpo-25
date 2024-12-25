@@ -369,6 +369,7 @@ section#why-attend{
             min-height: 250px; */
             height: 330px;
             width: 380px;
+            max-width: 380px;
            
             backdrop-filter: blur(15px);
             padding: 2.2rem 2rem;

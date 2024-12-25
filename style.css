@@ -231,7 +231,7 @@ section{
     & #aboutimg{
         flex: 1;
         & img{
-            min-width: 390px;
+            /* min-width: 390px; */
             width: 100%;
         }
     }
@@ -1173,6 +1173,11 @@ div.footer-one-social {
 }
 
 @media only screen and (width<680px){
+    
+    .about-container{
+        flex-direction: column;
+    }
+    
     #clg-details{
         flex-wrap: wrap !important;
     }

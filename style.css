@@ -319,7 +319,7 @@ section#why-attend{
     gap: 3rem;
     padding: 4rem 2rem;
     /* background-image: url(./assets/whyy.jpg); */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/whyyy.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/whysmall.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

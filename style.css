@@ -224,7 +224,7 @@ section{
     gap: 2.5rem;
     padding: 5rem;
     /* background-image: url('assets/about3.HEIC'); */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/aboutnew.jpg');
+    background: black;
     background-position: center;
     background-size: cover;
 
@@ -250,6 +250,7 @@ section{
         & p{
            
             color: #dddddd;
+            line-height: 1.75rem;
         }
     }
 }
@@ -272,6 +273,15 @@ section#who-can-participate{
     padding:50px;
     min-height: 300px;
     backdrop-filter: blur(10px);
+    position: relative;
+    .blender{
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 50px;
+        background: linear-gradient(180deg, black 0%, transparent 100%);
+    }
     & h1{
         max-width: 300px;
         width: 100%;

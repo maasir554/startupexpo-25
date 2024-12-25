@@ -89,6 +89,7 @@ section{
     align-items: center;
     justify-content: center;
     & .sec-para{
+        flex: 1;
         font-weight: 400;
         font-size: 1.0625rem;
         letter-spacing: 0.07438rem;
@@ -233,23 +234,25 @@ section{
 
     & #aboutimg{
         flex: 1;
+        /* width: 30%; */
         & img{
             /* min-width: 390px; */
             width: 100%;
         }
     }
+    & h1{
+        
+        color: #ebebeb;
+    }
     & #aboutus-content{
         flex: 1;
         display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         gap: 2rem;
         min-width: 300px;
-        & h1{
-            
-            color: #ebebeb;
-        }
+        width: 100%;
         & p{
            
             color: #dddddd;
@@ -260,6 +263,7 @@ section{
 
 .about-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5rem;
@@ -1201,6 +1205,10 @@ div.footer-one-social {
 
 @media only screen and (width<680px){
     
+    #aboutus-content{
+        flex-direction: column !important;
+    }
+
     .about-container{
         flex-direction: column;
     }

@@ -463,11 +463,11 @@ section#why-attend{
                 color: white;
             }  
             &:nth-child(1)>.screening-no{
-                background-color: #7B2C2D;
+                background-color: #E50914;
                 opacity: 1;
             }
             &:nth-child(2)>.screening-no{
-                background-color: #7B2C2D;
+                background-color: #E50914;
                 opacity: 1;
             }
         }

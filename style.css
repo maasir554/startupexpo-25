@@ -717,6 +717,16 @@ section#why-attend{
     /* padding-right: 6rem; */
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    #form-blender{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 65px;
+        background: linear-gradient(180deg, black 0%, transparent 100%);
+    }
 }
 
 #rf-illustration{

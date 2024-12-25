@@ -125,8 +125,10 @@ section{
 #intro{
     height: 100vh;
     background-image: url('assets/Hero.jpg');
-    background-size: cover;
-    background-position-x: center;
+    /* background-size: cover; */
+    background-size: contain;
+    background-color: black;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;

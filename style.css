@@ -127,6 +127,7 @@ section{
     background-image: url('assets/Hero.jpg');
     /* background-size: cover; */
     background-size: contain;
+    background-repeat: no-repeat;
     background-color: black;
     background-position: center;
     display: flex;
@@ -187,7 +188,7 @@ section{
     /* padding: 1rem 0rem 1rem 15rem; */
     gap: 1rem;
     font-family: "Montserrat", sans-serif;
-    
+    transform: scale(80%) translateY(-10px);
   
 
     

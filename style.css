@@ -347,12 +347,15 @@ section#why-attend{
             align-items: center;
             justify-content: start;
             text-shadow: 4px 4px 8px 0px #f6f1f1d6;
-
+            
+            & p{
+                text-align: justify;
+            }
             gap: 1rem;
             /* width: 350px;
             min-height: 250px; */
-            height: 300px;
-            width: 400px;
+            height: 330px;
+            width: 380px;
            
             backdrop-filter: blur(15px);
             padding: 2.2rem 2rem;

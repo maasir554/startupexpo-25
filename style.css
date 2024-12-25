@@ -398,8 +398,8 @@ section#why-attend{
 
 #reg-and-screening{
     /* background-color: black; */
-    background: rgb(74,21,21);
-    background: linear-gradient(273deg, rgb(33, 10, 10) 0%, rgba(0,0,0,1) 50%, rgb(43, 13, 13) 100%);
+    
+    background: linear-gradient(273deg, rgb(75, 9, 9) 0%, rgba(0,0,0,1) 50%, rgb(75, 9, 9) 100%);
     padding: 5rem 2rem;
     display: flex;
     flex-direction: column;

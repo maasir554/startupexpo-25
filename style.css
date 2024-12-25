@@ -218,12 +218,15 @@ section{
 
 #about{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
     padding: 5rem;
-    background-image: url('assets/aboutus25.png');
+    /* background-image: url('assets/about3.HEIC'); */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/aboutnew.jpg');
+    background-position: center;
+    background-size: cover;
 
     & #aboutimg{
         flex: 1;
@@ -251,8 +254,15 @@ section{
     }
 }
 
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
 section#who-can-participate{
-    background-image: url('assets/aboutus25.png');
+    /* background-image: url('assets/aboutnew.jpg'); */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -260,6 +270,7 @@ section#who-can-participate{
     gap: 3rem;
     padding:50px;
     min-height: 300px;
+    backdrop-filter: blur(10px);
     & h1{
         max-width: 300px;
         width: 100%;
@@ -307,7 +318,7 @@ section#why-attend{
     gap: 3rem;
     padding: 4rem 2rem;
     /* background-image: url(./assets/whyy.jpg); */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/whyyy.jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/whyyy.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -470,6 +481,7 @@ section#why-attend{
     text-shadow: 4px 4px 8px 0px #00000040;
     
 }
+
 #last-expo-details{
     justify-content: space-evenly;
     align-items: flex-start;
@@ -560,7 +572,10 @@ section#why-attend{
     align-items: center;
     gap: 3.5rem;
     height: 75vh;
-    background-image: url('assets/eventgallery/back.png');
+    /* background-image: url('assets/gallery.webp');  */
+    background: black;
+    background-position: center;
+    background-size: cover;
     
     
   }

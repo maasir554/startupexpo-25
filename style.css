@@ -1185,7 +1185,7 @@ div.footer-one-social {
             text-align: center !important;
         }
         p{
-            text-align: center !important;
+            text-align: justify !important;
         }
     }
     #why-attend-grid{
@@ -1214,7 +1214,12 @@ div.footer-one-social {
     #last-expo-details{
         padding: 5rem 2.5rem;
     }
-   
+    #reg-pro{
+        text-align: justify;
+    }
+ .screening-card{
+    text-align: justify !important;
+ }
 
 }
 

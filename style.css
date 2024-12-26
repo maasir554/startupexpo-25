@@ -140,6 +140,19 @@ section{
         font-family: "Montserrat", sans-serif;
     }
 }
+@media only screen and (width<795px){
+
+   #intro{
+    height:80vh;
+    padding-top: 20%;
+    margin-bottom: -20vh;
+   }
+   #intro-contents{
+    padding-top: 3rem;
+    
+   }
+   
+}
 
 #intro-contents{
     display: flex;

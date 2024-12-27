@@ -420,7 +420,7 @@ section#why-attend{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    filter: blur(2px);}
+    filter: blur(3px);}
     
     
     
@@ -656,13 +656,13 @@ section#why-attend{
   .film-strip-top {
     top: 0;
     padding: 5px 0;
-    animation: scroll-strip 20s linear infinite;
+    animation: scroll-strip 32s linear infinite;
   }
 
   .film-strip-bottom {
     bottom: 0;
     padding: 5px 0;
-    animation: scroll-strip 20s linear infinite;
+    animation: scroll-strip 32s linear infinite;
   }
 .gallery-heading{
     color: white;
@@ -834,7 +834,7 @@ section#why-attend{
         /* padding: 2rem 0rem; */
         padding-left: 1.5rem;
         overflow: hidden;
-        border: 2px solid #E50914;
+        border: 2px solid white;
         border-radius: 0.75rem;
 
         label{

@@ -405,6 +405,7 @@ section#why-attend{
 .why-attend-card{
     h2{
         color:#AE161E;
+        font-size: 1.75rem;
         text-shadow: 1px 1px 0px  #000000d6;
     }
 }

@@ -84,7 +84,7 @@ const setValuesOfCountDownVariebles = () => {
         SecsBox.innerText = secondsLeft >= 10 ? secondsLeft : '0' + secondsLeft;
     }
     else{
-        MainCountdownBox.innerHTML = `<p class="expired">Startup Expo 2024 is Over!<p>`
+        MainCountdownBox.innerHTML = `<p class="expired">Startup Expo 2025 is Over!<p>`
     }
 
 }
